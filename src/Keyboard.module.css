@@ -1,0 +1,18 @@
+.btn {
+    @apply w-full border-[3px] bg-none aspect-[1/1] text-[2.5rem] uppercase border-black p-2 font-bold 
+}
+
+
+.btn.active {
+    background-color: hsl(200, 200%, 50%);
+    color:white;
+}
+
+.btn.inactive {
+    @apply opacity-[0.3] 
+}
+
+.btn:hover:not(:disabled), 
+.btn:focus:not(:disabled) {
+    background-color: hsl(200, 100%, 75%);
+}
