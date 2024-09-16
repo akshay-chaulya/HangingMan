@@ -63,7 +63,7 @@ function App() {
       <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
       <HangmanWord
         reveal={isLoser} wordToGuess={wordToGuess} guessedLetters={guessedLetters} />
-      <div className="self-stretch">
+      <div className="self-stretch p-4">
         <Keyboard
           activeLetters={guessedLetters.filter(letter => wordToGuess.includes(letter))}
           inactiveLetters={incorrectLetters}
